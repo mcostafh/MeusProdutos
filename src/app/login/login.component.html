@@ -1,0 +1,33 @@
+<div class="card profile-card-2">
+  <div class="card-body pt-1">
+    <div class="borda">
+      <div id="login-container">
+        <img src="/m12.ico" alt="" width="100" height="55">
+
+        <form #loginForm="ngForm" (ngSubmit)="login()">
+          <input
+            type="email"
+            name="username"
+            id="username"
+            placeholder="Usuario"
+            autocomplete="off"
+            autofocus
+            required
+            [(ngModel)]="model.username"
+          >
+
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Senha"
+            required
+            [(ngModel)]="model.password"
+          >
+
+          <input type="submit" value="Entrar" [disabled]="!loginForm.valid">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

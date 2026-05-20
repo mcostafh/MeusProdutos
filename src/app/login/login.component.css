@@ -1,0 +1,229 @@
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  .text-center{
+
+    max-height: 330px;
+
+  }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .label {
+    font-family:  Verdana, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(24, 89, 211)!important;
+    vertical-align: middle;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+
+}
+
+
+/* geral */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  color: #323232;
+  border: none;
+}
+
+
+
+
+.borda{    
+  
+  color: rgba(30, 29, 29, 0.719);
+  font-size: 0.6cm;
+  border: solid; 
+  width: 318px;
+  margin-top: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 3px; 
+  border-radius: 40px; 
+  border-color: #03187451; 
+  padding-left: 5px;
+  padding-right: 5px;
+  }
+
+  .bordaM{    
+    background-color: rgb(71, 10, 89)!important;  
+    color: rgba(30, 29, 29, 0.719);
+    font-size: 0.4cm;
+    border: solid; 
+    width: 250px;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px; 
+    border-radius: 40px; 
+    border-color: #b1b2b3; 
+    padding-left: 1%;
+    padding-right: 1%;
+    }
+  
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+a {
+  font-size: .8rem;
+}
+
+a:hover {
+  color: #08558B;
+}
+
+/* container login */
+#login-container {
+  background-color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  padding: 5px 5px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  border-radius: 40px; 
+  text-align: center;
+}
+#login-containerM {
+  background-color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  padding: 5px 5px;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  border-radius: 40px; 
+  text-align: center;
+}
+
+/* formulário */
+form {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+label, input {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+input {
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+
+}
+
+input:focus {
+  border-bottom: 2px solid #08558B;
+}
+
+#forgot-pass {
+  display: block;
+  text-align: right;
+}
+
+input[type="submit"] {
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  height: 50px;
+  border-radius: 20px;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #FFF;
+  background-color: #08558B;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #1B223C;
+  transition: .5s;
+  height: 50px;
+}
+
+/* redes sociais */
+#social-container {
+  margin-bottom: 20px;
+}
+
+#social-container p {
+  margin-bottom: 20px;
+}
+
+#social-container i {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  margin: 0 5px;
+  color: #FFF;
+}
+.card-body-Venceu{
+  color:rgb(243, 237, 237); /*rgb(24, 89, 211)!important; */
+  background-color: #d60505!important;
+  vertical-align: middle;
+  text-align: justify;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  margin-left: 0.8em;
+  margin-top: 5px;
+  margin-bottom: 3px;  
+  font-family:  Verdana, sans-serif;
+  font-size: 0.70rem;
+}
+.fa-facebook-f {
+  background-color: #3B5998;
+}
+
+.fa-linkedin {
+  background-color: #0077B5;
+}
+
+/* registrar */
+#register-container p {
+  margin-bottom: 10px;
+}
