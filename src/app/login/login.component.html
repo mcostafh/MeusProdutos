@@ -25,7 +25,17 @@
             [(ngModel)]="model.password"
           >
 
-          <input type="submit" value="Entrar" [disabled]="!loginForm.valid">
+          @if (errorMessage) {
+            <div class="login-error" role="alert">
+              {{ errorMessage }}
+            </div>
+          }
+
+          <input
+            type="submit"
+            [value]="isLoading ? 'Entrando...' : 'Entrar'"
+            [disabled]="!loginForm.valid || isLoading"
+          >
         </form>
       </div>
     </div>

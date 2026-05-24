@@ -38,33 +38,11 @@ export class AuthService {
       .post(`${this.url}/login`, model).pipe(
           map((response: any) => {
             if (response?.token){
-              this.decodedToken = this.jwtHelpter.decodeToken( response.token);
-              this.empresaId = response.user.empresaId;
-              this.marcaEmpresarial = response.user.empresa.marcaEmpresarial;
-              (response.user.empresa.numero ? response.user.empresa.numero + ', ' : '')  + 
-              (response.user.empresa.bairro ? response.user.empresa.bairro + ', ' : '')  + 
-              (response.user.empresa.cidade ? response.user.empresa.cidade + ' - ' : '')  + 
-              (response.user.empresa.uf ? response.user.empresa.uf : '');
-              this.plano = response.user.empresa.planoDePagamento;
 
-              this.roleName = response.user.role.name;
-              this.dataDoProximoVencimento = response.user.empresa.proximoVencimento;
-              this.controlaGradeNosProdutos = response.user.empresa.controlaGradeNosProdutos;
-              this.controlaCorNosProdutos = response.user.empresa.controlaCorNosProdutos;
-
-
+              //this.decodedToken = this.jwtHelpter.decodeToken( response.token);
+              //this.empresaId = response.user.empresaId;
+              //this.marcaEmpresarial = response.user.empresa.marcaEmpresarial;
               sessionStorage.setItem('token', response.token);
-              sessionStorage.setItem('roleName', this.roleName);
-
-              sessionStorage.setItem('empresaId', this.empresaId);
-              sessionStorage.setItem('marcaEmpresarial', this.marcaEmpresarial);
-
-              sessionStorage.setItem('plano', this.plano);
-              sessionStorage.setItem('dataDoProximoVencimento', this.dataDoProximoVencimento);
-              sessionStorage.setItem('controlaGradeNosProdutos', this.controlaGradeNosProdutos);
-              sessionStorage.setItem('controlaCorNosProdutos', this.controlaCorNosProdutos);
-
-
 
             }
 

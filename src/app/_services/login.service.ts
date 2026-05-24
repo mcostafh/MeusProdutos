@@ -10,6 +10,7 @@ export class LoginService {
   protected get url(): string {return `${environment.BASE_URL}`; }
   protected get api(): string {return `${environment.API}`; }
   protected get routerGetToken(): any {return `${environment.ROUTERS.GET_TOKEN}`; }
+  protected get routerLogin(): any {return `${environment.ROUTERS.LOGIN}`; }
 
   constructor( private http: HttpClient ){  }
 
@@ -21,6 +22,11 @@ export class LoginService {
     }
     return this.http
       .post(`${this.url}${this.api}${this.routerGetToken}`, model);
+  };
+  
+loginFornecedor(model: any){
+    return this.http
+      .post(`${this.url}${this.api}${this.routerLogin}`, model);
   };
 
 }

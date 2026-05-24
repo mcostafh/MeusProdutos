@@ -11,7 +11,7 @@ export class AuthInterceptor implements HttpInterceptor{
     constructor( private router: Router){}
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-        if ( sessionStorage.getItem('token') !== null){
+        if ( sessionStorage.getItem('token') !== null && sessionStorage.getItem('logando') != 'S') {
             const cloneReq = req.clone({
                 headers : req.headers.set('Authorization', `Bearer ${sessionStorage.getItem('token')}`)
             });
